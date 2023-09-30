@@ -17,14 +17,14 @@ function ToggleDark() {
   if (document.body.style.backgroundImage === 'url("light-prism.svg")') {
     document.body.style.backgroundImage = "url('dark-prism.svg')";
     x.style.color = "#ffffff";
-    document.getElementById('youtube').src= "icons/light-youtube.svg";
-    document.getElementById('linkedin').src= "icons/light-linkedin.svg";
-    document.getElementById('github').src= "icons/light-github.svg";
+    document.getElementById('youtube').src= "light-youtube.svg";
+    document.getElementById('linkedin').src= "light-linkedin.svg";
+    document.getElementById('github').src= "light-github.svg";
   } else {
     document.body.style.backgroundImage = "url('light-prism.svg')";
     x.style.color = "#2e2e2e"
-    document.getElementById('youtube').src= "icons/dark-youtube.svg";
-    document.getElementById('linkedin').src= "icons/dark-linkedin.svg";
-    document.getElementById('github').src= "icons/dark-github.svg";
+    document.getElementById('youtube').src= "dark-youtube.svg";
+    document.getElementById('linkedin').src= "dark-linkedin.svg";
+    document.getElementById('github').src= "dark-github.svg";
   }
 }
