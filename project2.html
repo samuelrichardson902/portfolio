@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="code.js"></script>
+        <title>Programming Portfolio</title>
+    </head>
+
+
+    <body>
+        <div class="header">
+            <div class="header_name" onclick="ToggleDark()">
+                <img src="icons/logo.svg" alt="logo" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                Samuel<br class="small_window"> Richardson
+            </div>
+            
+            <ul class="header_links">
+                <li class="header_link-wrapper"><a href="./index.html#home" class="header_link">Home</a></li>
+                <li class="header_link-wrapper"><a href="./index.html#description" class="header_link">About</a></li>
+                <li class="header_link-wrapper"><a href="./index.html#projects" class="header_link">Projects</a></li>
+                <li class="header_link-wrapper"><a href="./index.html#contact" class="header_link">Contact</a></li>
+            </ul>
+
+            <div class="header_menu">
+                <a class="icon" onclick="ToggleMobileMenu()">
+                    <img src="icons/menu.svg" alt="menu" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                </a>
+            </div>
+
+            <div id="menu_links">
+                <a href="./index.html#home" class="menu_link" onclick="HideMobileMenu()">Home</a>
+                <a href="./index.html#description" class="menu_link" onclick="HideMobileMenu()">About Me</a>
+                <a href="./index.html#projects" class="menu_link" onclick="HideMobileMenu()">Projects</a>
+                <a href="./index.html#contact" class="menu_link" onclick="HideMobileMenu()">Contact</a>
+            </div>
+
+        </div>
+
+        <div id="home">
+            <div id="projecthome">
+
+                <div id="title">
+                    Low cost prosphetic development
+                </div>
+
+                <div id="pictures">
+                    <img src="hand.png" alt="project_photo" class="project_image_content_small">
+                    <img src="hand-demo.png" alt="project_photo" class="project_image_content_small">
+                </div>
+
+                <div id="project_description">
+                    I iteratively designed, manufactured and programmed a low cost prosphetic 
+                    to mimmick a persons hand using a camera and googles mediapipe library.
+                </div>
+
+                <div id="videos">
+                    <iframe src="https://youtube.com/embed/WUCHbTORnVs?si=qIxBaJwcMaCs781T" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+
+                <div id="tools_used">
+                    <h3>Tools used</h3>
+                    <div id="project_tools">
+                        <div class="tool">Python</div>
+                        <div class="tool">C++</div>
+                    </div>
+                </div>
+
+                <div class="section_btn">
+                    <a href="./index.html#projects" class="anchor">back to portfolio</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>

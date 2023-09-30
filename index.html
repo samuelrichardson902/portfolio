@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="code.js"></script>
+        <title>Programming Portfolio</title>
+        
+    </head>
+
+    <body>
+
+        <div class="header">
+
+            <div class="header_name" onclick="ToggleDark()">
+                <img src="icons/logo.svg" alt="logo" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                Samuel<br class="small_window"> Richardson
+            </div>
+            
+            <ul class="header_links">
+                <li class="header_link-wrapper"><a href="#home" class="header_link">Home</a></li>
+                <li class="header_link-wrapper"><a href="#description" class="header_link">About</a></li>
+                <li class="header_link-wrapper"><a href="#projects" class="header_link">Projects</a></li>
+                <li class="header_link-wrapper"><a href="#contact" class="header_link">Contact</a></li>
+            </ul>
+
+            <div class="header_menu">
+                <a class="icon" onclick="ToggleMobileMenu()">
+                    <img src="icons/menu.svg" alt="menu" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                </a>
+            </div>
+
+            <div id="menu_links">
+                <a href="#home" class="menu_link" onclick="HideMobileMenu()">Home</a>
+                <a href="#description" class="menu_link" onclick="HideMobileMenu()">About Me</a>
+                <a href="#projects" class="menu_link" onclick="HideMobileMenu()">Projects</a>
+                <a href="#contact" class="menu_link" onclick="HideMobileMenu()">Contact</a>
+            </div>
+
+        </div>
+
+        <div id="home">
+            
+            <div class="name"> 
+                <a class="anchor" name="home">Sam Richardson</a>
+            </div>
+
+            <div class="contactdetails">
+                Phone: 07341319157 <br>
+                Email: samuelrichardson902@gmail.com <br>
+                <a style="text-decoration:none;" href="https://www.youtube.com/@samrichardson7188/featured" target=”_blank”>
+                    <img src="icons/light-youtube.svg" id="youtube" alt="youtube" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                </a>
+                <a style="text-decoration:none;" href="https://www.linkedin.com/in/sam-richardson-2701451a7/" target=”_blank”>
+                    <img src="icons/light-linkedin.svg" id="linkedin" alt="linkedin" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                </a>
+                <a style="text-decoration:none;" href="https://github.com/samuelrichardson902" target=”_blank”>
+                    <img src="icons/light-github.svg" id="github" alt="github" style="width:var(--widgetwidth);max-width:100%;height:auto;">
+                </a>
+            </div>
+
+            <div class="content">
+                
+                <br>
+                <div class="section_btn">
+                    <a href="#description" class="anchor" name="description">About Me</a>
+                </div>
+                <br>
+
+                <div class="description">
+                    <div class="description_main">
+                        <h3>About Me</h3>
+                        I'm currently in my first year at Loughborough university
+                        working towards a bachelors of science degree in computer science.
+                        My interests include software development, robotics, Ai and machine learning.
+                        During sixth-form i studied further maths, computer science, engineering and maths.
+                    </div>
+
+                    <div class="description_skills">
+                        <h3>skills</h3>
+                        <div class="skills">
+                            <div class="skill">Python</div>
+                            <div class="skill">C++</div>
+                            <div class="skill">HTML</div>
+                            <div class="skill">CSS</div>
+                            <div class="skill">JavaScript</div>
+                            <div class="skill">Haskell</div>
+                            <div class="skill">Java</div>
+                            <div class="skill">C</div>
+                            <div class="skill">PHP</div>
+                            <div class="skill">SQL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="section_btn">
+                    <a href="#projects" class="anchor" name="projects">Projects</a>
+                </div>
+
+                
+                <div class="projects">
+                    <br>
+                    <!-- info section -->
+                    <div class="project_showcase">
+
+                        <div class="project_row">
+                            <div class="project_image">
+                                <img src="tetris.png" alt="project_photo" class="image_content">
+                            </div>
+                            <div class="project_content">
+                                <div class="project_title">
+                                    Machine learning Tetris
+                                </div>
+                                <div class="project_desc">
+                                    I created an online multiplayer Tetris game, that also had a computer 
+                                    controlled player trained to play at varying levels of difficulty 
+                                    using machine learning.
+                                </div>
+                                <div class="project_btn">
+                                    <a href="./project1.html" class="anchor" name="project">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project_row">
+                            <div class="project_image">
+                                <img src="hand.png" alt="project_photo" class="image_content_small">
+                                <img src="hand-demo.png" alt="project_photo" class="image_content_small">
+                            </div>
+                            <div class="project_content">
+                                <div class="project_title">
+                                    Camera controlled prosphetic
+                                </div>
+                                <div class="project_desc">
+                                    I iteratively designed, manufactured and programmed a low cost prosphetic 
+                                    to mimmick a persons hand using a camera and googles mediapipe library.
+                                </div>
+                                <div class="project_btn">
+                                    <a href="./project2.html" class="anchor" name="project">View More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                </div>
+
+                <br>
+                <div class="section_btn">
+                    <a href="#contact" class="anchor" name="contact">Contact Me</a>
+                </div>
+
+                <div class="contact">
+                    <br>
+
+                    <!-- info section -->
+
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
