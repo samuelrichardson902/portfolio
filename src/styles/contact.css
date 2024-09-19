@@ -1,0 +1,62 @@
+#contact {
+  padding: 60px 0; /* Slightly reduced padding */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Keep left alignment */
+  gap: 25px; /* Reduced gap between items */
+  margin-top: 30px; /* Reduced top margin */
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  width: 100%;
+}
+
+.contact-links {
+  display: flex;
+  gap: 30px; /* Slightly reduced space between social icons */
+  margin-top: 5px; /* Reduced top margin */
+}
+
+.contact-links i {
+  color: #ffffff;
+  font-size: 32px; /* Slightly larger icons */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-links i:hover {
+  transform: scale(1.2);
+  color: #4a90e2; /* Adjust this color as needed */
+}
+
+/* Add this new rule for extra spacing */
+.container > p {
+  margin-bottom: 20px;
+}
+
+.tooltip {
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeInOut 1.5s ease;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+}

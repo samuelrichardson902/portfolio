@@ -1,0 +1,36 @@
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.navbar-brand img {
+  margin-right: 15px; /* Adjust this value as needed */
+}
+
+.scrolled-down {
+  transform: translateY(-120%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+  transition: top 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+  box-shadow: none;
+}
+
+.navbar .nav-item,
+.navbar-brand,
+.navbar-toggler {
+  color: white; /* Ensure text stands out */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: Adds a slight shadow for better contrast */
+}
+
+.nav-link {
+  color: white !important;
+}

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/navBar'
+import Hero from './components/hero'
+import About from './components/about'
+import Projects from './components/projects'
+import Contact from './components/contact'
+import ProjectDetail from './components/projectDetail'
 
-function App() {
+import './App.css' // Import global styles
+
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hero />
+      <About />
+      <Projects /> {/* Project list or overview */}
+      <Contact />
     </div>
-  );
+  )
 }
 
-export default App;
+const App = () => {
+  return (
+    <Router>
+      {/* Navbar remains consistent across all pages */}
+      <Navbar />
+
+      <Routes>
+        {/* Main page route */}
+        <Route path="/" element={<Home />} />
+
+        {/* Dynamic project detail route */}
+        <Route path="/project/:id" element={<ProjectDetail />} />
+      </Routes>
+    </Router>
+  )
+}
+
+export default App

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+
+  background-image: url('../../public/mountain-background/mountain_landscape24_generated.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Remove fixed attachment */
+  background-attachment: scroll;
+
+  /* Apply the parallax effect */
+  background-position: center;
+  background-position: 50% 0; /* Adjust for parallax effect */
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1,
+#hero p {
+  display: inline-block; /* Ensures background only wraps the text */
+  background-color: rgba(0, 0, 0, 0.47); /* Opaque black background with some transparency */
+  padding: 10px 20px; /* Add padding around the text */
+  border-radius: 50px; /* Optional: Adds rounded corners to the box */
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}
+
+#hero p {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}
+
+.scroll-arrows {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-down {
+  width: 24px;
+  height: 24px;
+  border-left: 6px solid white;
+  border-bottom: 6px solid white;
+  transform: rotate(-45deg) skew(10deg, 10deg);
+  margin: -6px auto 0;
+  animation: arrow-glow 3s infinite; /* Slowed down from 2s to 3s */
+  border-radius: 5px;
+}
+
+@keyframes arrow-glow {
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  }
+  50% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+  }
+}
+
+.arrow-down:nth-child(1) {
+  animation-delay: 0s; /* Top arrow starts glowing immediately */
+}
+
+.arrow-down:nth-child(2) {
+  animation-delay: 0.4s; /* Bottom arrow starts glowing after a delay */
+  margin-top: -3px; /* Decreased from 0px to -3px for less vertical spacing */
+}

@@ -1,0 +1,51 @@
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-group:nth-child(even) {
+  transform: translateY(28px);
+}
+
+.skill-card {
+  border: 3px solid #4a90e2;
+  border-radius: 6px;
+  width: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 25px rgba(74, 144, 226, 0.44); /* Glowing effect */
+}
+
+.skill-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* Specific styles for the View More/Less button */
+.view-more-card {
+  height: 95px; /* Matches the height of the logo cards for consistency */
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}

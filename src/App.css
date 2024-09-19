@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+
+.heading-effect {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: white; /* Color of the text */
+  font-size: 2em; /* Adjust as needed */
+}
+
+.heading-effect::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  width: 100%;
+  height: 0.3em; /* Thickness of the underline */
+  background-color: #4a90e2; /* Color of the underline */
+  z-index: -1; /* Position the underline behind the text */
+  transform: skew(-10deg); /* Skew the underline */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.14); /* Glowing effect */
+}

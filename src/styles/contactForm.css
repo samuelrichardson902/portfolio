@@ -1,0 +1,105 @@
+/* Form container styling */
+form {
+  width: 100%; /* Ensure the form takes full width of its container */
+  max-width: 100%; /* Allow it to stretch to full width of its container */
+  margin: 0;
+  padding: 15px;
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+/* Styling form labels */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #f5f5f5;
+}
+
+/* Input and Textarea Styling */
+form input[type='text'],
+form input[type='email'],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #333;
+  color: #f5f5f5;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Focused input and textarea */
+form input[type='text']:focus,
+form input[type='email']:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea height */
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Submit button styling */
+form button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+form button[type='submit']:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Toast notification styling */
+.toast-notification {
+  position: fixed; /* Stay in one place */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by half the size to truly center */
+  padding: 16px;
+  background-color: #007bff; /* Same blue color as button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 9999; /* Make sure it stays above all other elements */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
+}
+
+/* Fade out effect for hiding the toast */
+.toast-notification.hide {
+  opacity: 0; /* Hidden state */
+  transition: opacity 0.5s ease-in; /* Smooth fade-in effect */
+}
