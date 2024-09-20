@@ -72,26 +72,22 @@ const ProjectDetail = () => {
             </div>
           )}
         </div>
-        {project.link === null ? (
-          <div>
+        <div className="project-link-container">
+          {project.link && project.link !== 'none' && (
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+              View Project
+            </a>
+          )}
+          {project.link === null && (
             <div className="project-in-progress">
               <span className="in-progress-icon">🚧</span>
               <p>This project is currently in progress. Stay tuned for updates!</p>
             </div>
-            <a href="/" onClick={(e) => handleHomeClick(e, '#hero')} className="home-icon">
-              <img src="/home.svg" alt="Home" />
-            </a>
-          </div>
-        ) : (
-          <div className="project-link-container">
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-              View Project
-            </a>
-            <a href="/" onClick={(e) => handleHomeClick(e, '#hero')} className="home-icon">
-              <img src="/home.svg" alt="Home" />
-            </a>
-          </div>
-        )}
+          )}
+          <a href="/" onClick={(e) => handleHomeClick(e, '#hero')} className="home-icon">
+            <img src="/home.svg" alt="Home" />
+          </a>
+        </div>
       </div>
     </div>
   )

@@ -29,8 +29,9 @@ const About = () => {
         <div className="col-lg-6 mb-4">
           <div className="about-me-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. I dont know what to write
-              here so blah blah blah. the quick brown fox jumps over the lazy dog.
+              Hi, i'm currently a second-year Computer Science student at Loughborough University, pursuing a BSc. My focus areas include
+              software development, robotics, AI, and machine learning. In sixth form, I studied Further Maths, Computer Science,
+              Engineering, and Maths.
             </p>
           </div>
         </div>

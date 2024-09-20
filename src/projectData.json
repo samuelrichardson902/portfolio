@@ -2,7 +2,7 @@
   {
     "id": "unify",
     "title": "Unify",
-    "overview": "A collaboration platform bringing teams together.",
+    "overview": "An events creation and sharing platform aimed at simplifying university life.",
     "description": "Unify is a cutting-edge collaboration platform designed to streamline team communication and project management. It enables real-time messaging, file sharing, and task management, making it an essential tool for remote and hybrid teams. With an intuitive interface, Unify promotes seamless collaboration, reducing project bottlenecks and enhancing productivity. The platform integrates with multiple third-party services and provides robust security features to protect sensitive team data. Whether you're working in a small startup or a large enterprise, Unify helps bring everyone together in one unified workspace.",
     "imgSrc": "/project_images/unify.png",
     "technologies": ["React-Native", "Node.js", "Supabase", "SQL", "MongoDb"],
@@ -12,21 +12,21 @@
   {
     "id": "tetrisAI",
     "title": "Tetris AI",
-    "overview": "AI-powered Tetris game.",
+    "overview": "An online multiplayer Tetris game, with an AI opponent trained to play at varying levels of difficulty using machine learning.",
     "description": "Tetris AI is an AI-driven version of the classic Tetris game that showcases advanced artificial intelligence techniques to autonomously play and excel at Tetris. Utilizing Python and Pygame, the AI is programmed with strategies to optimize block placements, clear lines efficiently, and achieve high scores. The game features various levels of difficulty where the AI learns from each iteration, improving its performance over time. This project not only provides entertainment but also serves as an example of practical AI application in gaming, offering insights into AI algorithms, machine learning concepts, and game development.",
     "imgSrc": "/project_images/tetris_ai.png",
     "technologies": ["Python", "Pygame"],
-    "link": "https://tetris-ai.example.com",
+    "link": "none",
     "youtubeUrl": "J1CAo_8KpNA"
   },
   {
     "id": "prostheticHand",
     "title": "Prosthetic Hand",
-    "overview": "An innovative prosthetic hand design.",
+    "overview": "A low-cost 3D-printed prosthetic that mimics a person's hand using a camera and googles media-pipe library.",
     "description": "The Prosthetic Hand project is a revolutionary prototype aimed at improving the lives of individuals with limb loss. This cutting-edge design leverages Python for gesture recognition via the MediaPipe API, combined with Arduino for precise motor control. The prosthetic hand responds to user inputs in real time, enabling natural and intuitive movements. Developed using 3D-printed components and CAD design, the hand is lightweight, durable, and affordable compared to traditional prosthetics. By integrating advanced algorithms and machine learning, it offers personalized movement patterns and can adapt to the user's unique needs, marking a significant step forward in assistive technology.",
     "imgSrc": "/project_images/prosthetic_hand2.png",
     "technologies": ["Python", "MediaPipe Api", "Arduino", "C++", "CAD", "3D-Printing"],
-    "link": "https://prosthetic-hand.example.com",
+    "link": "https://github.com/samuelrichardson902/prosthetic-hand",
     "youtubeUrl": "WUCHbTORnVs"
   }
 ]

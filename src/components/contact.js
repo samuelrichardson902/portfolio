@@ -17,7 +17,7 @@ const Contact = () => {
             <a href="https://github.com/samuelrichardson902" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="www.linkedin.com/in/samrichardson902" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/samrichardson902/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
             <a href="https://www.youtube.com/@samrichardson7188" target="_blank" rel="noopener noreferrer">
