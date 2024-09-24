@@ -8,28 +8,39 @@ const Navbar = () => {
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset
+    const navbar = document.querySelector('.navbar')
+
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset
-      const navbar = document.querySelector('.navbar')
       if (navbar) {
         if (prevScrollPos > currentScrollPos) {
+          // User is scrolling up, show navbar
           navbar.style.top = '0'
           navbar.classList.remove('hidden')
         } else {
+          // User is scrolling down, hide navbar
           navbar.style.top = `-${navbar.offsetHeight}px`
           navbar.classList.add('hidden')
         }
         prevScrollPos = currentScrollPos
       }
     }
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId)
+    const navbarHeight = document.querySelector('.navbar').offsetHeight
+
     if (element) {
-      element.scrollIntoView({ behavior: 'auto' })
+      // Get the position of the section relative to the top and adjust for navbar height
+      const sectionPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth',
+      })
     }
   }
 
