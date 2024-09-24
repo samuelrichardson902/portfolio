@@ -29,7 +29,7 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: 'auto' })
     }
   }
 
