@@ -8,64 +8,41 @@ const Navbar = () => {
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset
-    const navbar = document.querySelector('.navbar')
-
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset
-
+      const navbar = document.querySelector('.navbar')
       if (navbar) {
         if (prevScrollPos > currentScrollPos) {
-          // User is scrolling up, show navbar
           navbar.style.top = '0'
           navbar.classList.remove('hidden')
         } else {
-          // User is scrolling down, hide navbar
           navbar.style.top = `-${navbar.offsetHeight}px`
           navbar.classList.add('hidden')
         }
         prevScrollPos = currentScrollPos
       }
     }
-
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId)
-    const navbarHeight = document.querySelector('.navbar').offsetHeight
-
     if (element) {
-      const sectionPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight
-
-      window.scrollTo({
-        top: sectionPosition,
-        behavior: 'smooth',
-      })
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
   const handleNavClick = (event, sectionId) => {
     event.preventDefault()
-
-    // Ensure the navbar is visible before scrolling
-    const navbar = document.querySelector('.navbar')
-    if (navbar) {
-      navbar.style.top = '0' // Make sure the navbar is visible
-      navbar.classList.remove('hidden')
-    }
-
-    // Scroll to the section if we are on the home page
     if (location.pathname === '/') {
       scrollToSection(sectionId)
     } else {
-      // If on another page, navigate to "/", and then scroll to the section
       navigate('/', { state: { scrollTo: sectionId } })
     }
   }
 
   useEffect(() => {
-    // When the user returns to "/", scroll to the target section if available
     if (location.pathname === '/' && location.state?.scrollTo) {
       setTimeout(() => {
         scrollToSection(location.state.scrollTo)
