@@ -11,7 +11,7 @@ const About = () => {
     { name: 'Supabase', file: 'supabase' },
     { name: 'MongoDB', file: 'mongodb' },
     { name: 'Java', file: 'java' },
-    { name: 'C', file: 'c' },
+    { name: 'C++', file: 'cPlusPlus' },
     { name: 'HTML', file: 'html' },
   ]
 
