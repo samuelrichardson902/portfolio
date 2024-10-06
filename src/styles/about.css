@@ -1,12 +1,14 @@
 .skill-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Prevent wrapping */
   justify-content: center;
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
 .skill-group {
   display: flex;
   flex-direction: column;
+  min-width: 95px; /* Ensure each skill group has a minimum width */
 }
 
 .skill-group:nth-child(even) {
