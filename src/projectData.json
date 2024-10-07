@@ -3,7 +3,7 @@
     "id": "unify",
     "title": "Unify",
     "overview": "An events creation and sharing platform aimed at simplifying university life.",
-    "description": "Unify is a cutting-edge collaboration platform designed to streamline team communication and project management. It enables real-time messaging, file sharing, and task management, making it an essential tool for remote and hybrid teams. With an intuitive interface, Unify promotes seamless collaboration, reducing project bottlenecks and enhancing productivity. The platform integrates with multiple third-party services and provides robust security features to protect sensitive team data. Whether you're working in a small startup or a large enterprise, Unify helps bring everyone together in one unified workspace.",
+    "description": "Unify is a cutting-edge events & time management platform designed to streamline university life. It enables societies and venues to share events to their users with minimal hassle. With an intuitive interface Unify allows uni students to focus on things that matter, not just juggling their social life. The platform provides robust security features to protect sensitive data. Whether you're working in a small club or a large society, Unify helps bring everything together on one unified platform.",
     "imgSrc": "/project_images/unify.png",
     "technologies": ["React-Native", "Node.js", "Supabase", "SQL", "PostHog"],
     "link": null,
