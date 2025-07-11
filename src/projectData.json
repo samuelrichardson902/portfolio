@@ -3,7 +3,7 @@
     "id": "jobify",
     "title": "Jobify",
     "overview": "A streamlined job application tracker with AI-powered autofill and smart analytics.",
-    "description": "Jobify is a modern job application tracker built to simplify and centralize your job hunt. With a clean dashboard, users can manage all their job applications in one place. Its standout feature is an AI-powered autofill system using the Gemini API just paste a job posting link, and Jobify extracts key details for you. Built with Next.js, Supabase, and TailwindCSS, the platform offers secure authentication via Google and a fast, responsive UI with DaisyUI components. Future updates will introduce job search analytics to help users track their progress and optimize applications. Whether you're job hunting casually or full-time, Jobify makes the process efficient and stress-free.",
+    "description": "Jobify is a job application tracker built to simplify and centralize your job hunt. With a clean dashboard, users can manage all their job applications in one place. Its standout feature is an AI-powered autofill system using the Gemini API just paste a job posting link, and Jobify extracts key details for you. Built with Next.js, Supabase, and TailwindCSS, the platform offers secure authentication via Google and a fast, responsive UI with DaisyUI components. Future updates will introduce job search analytics to help users track their progress and optimize applications. Whether you're job hunting casually or full-time, Jobify makes the process efficient and stress-free.",
     "imgSrc": "/project_images/jobify.png",
     "technologies": ["Next.js", "Daisy Ui", "Supabase", "Gemini Api"],
     "link": "https://jobify-track.vercel.app/",
