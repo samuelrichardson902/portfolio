@@ -54,6 +54,7 @@ const categorizedSkills = [
       { name: "GitHub", icon: "simple-icons:github" },
       { name: "VS Code", icon: "devicon:vscode" },
       { name: "Insomnia", icon: "devicon:insomnia" },
+      { name: "Burp Suite", icon: "simple-icons:burpsuite" },
     ],
   },
   {
