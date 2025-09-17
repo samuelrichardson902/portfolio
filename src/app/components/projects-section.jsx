@@ -53,20 +53,7 @@ export default function ProjectsSection() {
           and insights.
         </p>
       </ProjectCard>
-      {/*Tetris Ai*/}
-      <ProjectCard id="tetris-ai" link="/tetrisAi" reverse={true}>
-        <img
-          src="/project_images/tetris_ai.png"
-          alt="Tetris Ai"
-          className="project-image"
-        />
-        <h2 className="text-2xl font-bold mb-2">Tetris Ai</h2>
-        <p className="text-base">
-          An autonomous Tetris-playing agent developed in Python using Pygame,
-          leveraging heuristic-based algorithms and machine learning to make
-          real-time gameplay decisions.
-        </p>
-      </ProjectCard>
+
       {/*River Predictor*/}
       <ProjectCard id="river-predictor" link="/riverAi">
         <img
@@ -127,6 +114,20 @@ export default function ProjectsSection() {
           task board, analytics dashboard, real-time chat system (DMs and group
           chats), and an integrated knowledge base. With secure JWT-based
           authentication for user management.
+        </p>
+      </ProjectCard>
+      {/*Tetris Ai*/}
+      <ProjectCard id="tetris-ai" link="/tetrisAi" reverse={true}>
+        <img
+          src="/project_images/tetris_ai.png"
+          alt="Tetris Ai"
+          className="project-image"
+        />
+        <h2 className="text-2xl font-bold mb-2">Tetris Ai</h2>
+        <p className="text-base">
+          An autonomous Tetris-playing agent developed in Python using Pygame,
+          leveraging heuristic-based algorithms and machine learning to make
+          real-time gameplay decisions.
         </p>
       </ProjectCard>
       {/*Uni projects*/}
