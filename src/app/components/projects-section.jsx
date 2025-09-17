@@ -55,7 +55,7 @@ export default function ProjectsSection() {
       </ProjectCard>
 
       {/*River Predictor*/}
-      <ProjectCard id="river-predictor" link="/riverAi">
+      <ProjectCard id="river-predictor" link="/riverAi" reverse={true}>
         <img
           src="/project_images/river_ai.png"
           alt="River Predictor"
@@ -70,7 +70,7 @@ export default function ProjectsSection() {
         </p>
       </ProjectCard>
       {/*ZenTap*/}
-      <ProjectCard id="zentap" link="/zentap" reverse={true}>
+      <ProjectCard id="zentap" link="/zentap">
         <img
           src="/project_images/zentap/screens.png"
           alt="ZenTap"

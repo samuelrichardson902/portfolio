@@ -41,48 +41,27 @@ export default function ProjectCard({
   return (
     <div
       id={id}
-      className={`h-auto w-full flex flex-col md:flex-row pb-12 ${className}`}
+      className={`h-auto w-full flex flex-col pb-12 ${
+        reverse ? "md:flex-row-reverse" : "md:flex-row"
+      } ${className}`}
     >
       {/* Conditionally render image/content order based on reverse prop */}
-      {reverse ? (
-        <>
-          {content.length > 0 && <div className={contentClass}>{content}</div>}
-          {image && (
-            <div className={imgClass}>
-              {link ? (
-                isExternal ? (
-                  <a href={link} target="_blank" rel="noopener noreferrer">
-                    {image}
-                  </a>
-                ) : (
-                  <Link href={link}>{image}</Link>
-                )
-              ) : (
-                image
-              )}
-            </div>
+      {image && (
+        <div className={imgClass}>
+          {link ? (
+            isExternal ? (
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {image}
+              </a>
+            ) : (
+              <Link href={link}>{image}</Link>
+            )
+          ) : (
+            image
           )}
-        </>
-      ) : (
-        <>
-          {image && (
-            <div className={imgClass}>
-              {link ? (
-                isExternal ? (
-                  <a href={link} target="_blank" rel="noopener noreferrer">
-                    {image}
-                  </a>
-                ) : (
-                  <Link href={link}>{image}</Link>
-                )
-              ) : (
-                image
-              )}
-            </div>
-          )}
-          {content.length > 0 && <div className={contentClass}>{content}</div>}
-        </>
+        </div>
       )}
+      {content.length > 0 && <div className={contentClass}>{content}</div>}
     </div>
   );
 }
