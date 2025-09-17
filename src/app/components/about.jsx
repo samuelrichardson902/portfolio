@@ -14,6 +14,7 @@ const categorizedSkills = [
       { name: "HTML", icon: "devicon:html5" },
       { name: "CSS", icon: "devicon:css3" },
       { name: "PHP", icon: "devicon:php" },
+      { name: "Kotlin", icon: "devicon:kotlin" },
     ],
   },
   {
@@ -23,6 +24,7 @@ const categorizedSkills = [
       { name: "Next.js", icon: "devicon:nextjs" },
       { name: "Tailwind CSS", icon: "devicon:tailwindcss" },
       { name: "daisyUI", customSvg: "/daisyUI-rotating.svg" },
+      { name: "Jetpack Compose", icon: "devicon:jetpackcompose" },
     ],
   },
   {
@@ -55,6 +57,7 @@ const categorizedSkills = [
       { name: "VS Code", icon: "devicon:vscode" },
       { name: "Insomnia", icon: "devicon:insomnia" },
       { name: "Burp Suite", icon: "simple-icons:burpsuite" },
+      { name: "Android Studio", icon: "devicon:android" },
     ],
   },
   {

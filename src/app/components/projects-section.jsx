@@ -82,6 +82,22 @@ export default function ProjectsSection() {
           annealing, and weight decay.
         </p>
       </ProjectCard>
+      {/*ZenTap*/}
+      <ProjectCard id="zentap" link="/zentap" reverse={true}>
+        <img
+          src="/project_images/zentap/screens.png"
+          alt="ZenTap"
+          className="project-image"
+        />
+        <h2 className="text-2xl font-bold mb-2">ZenTap</h2>
+        <p className="text-base">
+          An open-source Android app blocker designed to combat digital
+          distraction by requiring a physical NFC tag to unlock apps. Key
+          features include a "Strict Mode", recurring scheduling with AutoLock,
+          and an emergency "Break Glass" override. The project is supported by a
+          companion showcase website built with Next.js.
+        </p>
+      </ProjectCard>
       {/*Robot Hand*/}
       <ProjectCard id="robot-hand" link="/roboHand" reverse={true}>
         <img
@@ -114,7 +130,7 @@ export default function ProjectsSection() {
         </p>
       </ProjectCard>
       {/*Uni projects*/}
-      <ProjectCard id="uni-projects" link="/uniProjects" reverse={true}>
+      <ProjectCard id="uni-projects" link="/uniProjects">
         <img
           src="/project_images/uniProjects/climbingApp.png"
           alt="Uni Projects"

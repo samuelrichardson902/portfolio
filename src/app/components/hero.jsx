@@ -31,9 +31,7 @@ export default function Hero() {
           <h1 className="text-5xl font-extrabold text-base-100-content">
             Sam Richardson
           </h1>
-          <p className="text-2xl text-base-100-content pt-2">
-            Student Developer
-          </p>
+          <p className="text-2xl text-base-100-content pt-2">Developer</p>
         </div>
         {showArrows && (
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
