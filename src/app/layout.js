@@ -14,6 +14,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap"
+        />
       </head>
       <body>{children}</body>
     </html>

@@ -27,11 +27,13 @@ export default function Hero() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
-        <div className="backdrop-blur-sm bg-base-300/50 rounded-4xl p-6 shadow-xl items-center font-marker sm:mx-8">
+        <div className="backdrop-blur-sm bg-base-300/50 rounded-4xl p-6 shadow-xl items-center font-['Rubik_Doodle_Shadow'] sm:mx-8">
           <h1 className="text-5xl font-extrabold text-base-100-content">
             Sam Richardson
           </h1>
-          <p className="text-2xl text-base-100-content pt-2">Developer</p>
+          <p className="text-2xl text-base-100-content pt-2">
+            Developer , Mountaineer , Tinkerer
+          </p>
         </div>
         {showArrows && (
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">

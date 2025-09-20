@@ -19,6 +19,10 @@ export default function Jobify() {
       src: "/project_images/zentap/diyGuide.png",
       alt: "zentap diy guide",
     },
+    {
+      src: "/project_images/zentap/tag.png",
+      alt: "zentap tag",
+    },
   ];
 
   return (
@@ -96,6 +100,16 @@ export default function Jobify() {
                     alt="Three.js"
                     style={{ height: shieldHeight }}
                   />
+                  <img
+                    src="https://img.shields.io/badge/CAD-0077C2?logo=autodesk&logoColor=white"
+                    alt="CAD"
+                    style={{ height: shieldHeight }}
+                  />
+                  <img
+                    src="https://img.shields.io/badge/3D%20Printing-FFB300?logo=3d&logoColor=white"
+                    alt="3D Printing"
+                    style={{ height: shieldHeight }}
+                  />
                 </div>
               </div>
             </div>
@@ -127,6 +141,28 @@ export default function Jobify() {
                 View GitHub
               </a>
             </div>
+          </div>
+          {/* Back Button */}
+          <div className="mt-12 flex justify-center">
+            <a
+              href="/#zentap"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-5 h-5"
+              >
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+              Back to Portfolio
+            </a>
           </div>
         </div>
       </div>

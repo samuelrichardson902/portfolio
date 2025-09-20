@@ -30,3 +30,7 @@
   transform: skew(-10deg);
   box-shadow: 0 0 5px rgba(74, 144, 226, 0.14);
 }
+
+html {
+  scroll-behavior: smooth;
+}

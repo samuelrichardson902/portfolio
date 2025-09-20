@@ -132,6 +132,28 @@ export default function Jobify() {
               </a>
             </div>
           </div>
+          {/* Back Button */}
+          <div className="mt-12 flex justify-center">
+            <a
+              href="/#jobify"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-5 h-5"
+              >
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+              Back to Portfolio
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 // Import Heroicons for social icons
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa";
 
 // EmailJS is only used client-side
 import emailjs from "@emailjs/browser";
@@ -194,6 +194,14 @@ export default function ContactSection() {
               className="btn btn-ghost btn-circle text-4xl"
             >
               <FaYoutube />
+            </a>
+            <a
+              href="https://www.instagram.com/samafamalama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost btn-circle text-4xl"
+            >
+              <FaInstagram />
             </a>
           </div>
         </div>

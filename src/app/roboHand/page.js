@@ -18,7 +18,7 @@ export default function RoboHand() {
         aria-hidden="true"
       />
       {/* Main content */}
-      <div className="relative z-10 w-full">
+      <div className="relative z-10 w-8xl">
         <NavBar />
         <div className="px-8 py-8 md:px-20 md:py-20 w-full">
           <h2 className="text-3xl font-bold mb-8 heading-effect">Robot Hand</h2>
@@ -131,6 +131,28 @@ export default function RoboHand() {
                 View GitHub
               </a>
             </div>
+          </div>
+          {/* Back Button */}
+          <div className="mt-12 flex justify-center">
+            <a
+              href="/#robot-hand"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-5 h-5"
+              >
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+              Back to Portfolio
+            </a>
           </div>
         </div>
       </div>

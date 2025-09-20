@@ -65,6 +65,8 @@ const categorizedSkills = [
     skills: [
       { name: "Figma", icon: "devicon:figma" },
       { name: "Diagrams.net", icon: "simple-icons:diagramsdotnet" },
+      { name: "Fusion 360", icon: "devicon:fusion" },
+      { name: "3D Printing", icon: "mdi:printer-3d" },
     ],
   },
 ];
@@ -216,12 +218,9 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-10 justify-center items-center md:items-start text-left">
           <div className="w-full md:w-[60%] h-fit flex justify-center md:justify-start px-4 md:px-0">
             <p className="text-base sm:text-md">
-              Hi, I’m Sam Richardson - a Computer Science student at
-              Loughborough University with a passion for building innovative
-              software that solves real-world problems. I specialize in
-              full-stack development, AI, and scalable web applications, with
-              hands-on experience using technologies like Next.js, Supabase,
-              GCP, and React.
+              Hey, I’m <b>Sam</b> - a Computer Science student at Loughborough
+              University with a passion for using software and hardware to build
+              things that solve real-world problems.
               <br />
               <br />
               I enjoy turning complex ideas into functional tools - from
@@ -231,9 +230,18 @@ export default function About() {
               technologies and pushing my boundaries.
               <br />
               <br />
-              When I’m not coding, you’ll probably find me at the climbing wall
-              or participating in hackathons. I love learning by doing - and I’m
-              always open to new challenges.
+              I'm endlessly curious about how things work, from complex
+              algorithms to intricate mechanical parts. This curiosity fuels my
+              passion for building things. In a workshop, I'm just as happy
+              taking something apart to understand how it works as I am bringing
+              a completely new idea to life with my 3D printer.
+              <br />
+              <br />
+              I'm a firm believer in living life outside of your comfort zone.
+              Whether it's the intense focus of climbing, the raw power of
+              whitewater kayaking, or finding the perfect apex on a race track,
+              I'm drawn to challenges that demand everything I've got and love
+              the adrenaline rush that comes with them.
             </p>
           </div>
           <div className="w-full md:w-[40%] flex items-center justify-center mt-6 md:mt-0 flex-col">

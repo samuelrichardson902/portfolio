@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 
 const pages = [
   { name: "Home", id: "home" },
-  { name: "About", id: "about" },
+  { name: "About Me", id: "about" },
   { name: "Projects", id: "projects" },
   { name: "Contact", id: "contact" },
 ];
