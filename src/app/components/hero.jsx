@@ -32,7 +32,7 @@ export default function Hero() {
             Sam Richardson
           </h1>
           <p className="text-2xl text-base-100-content pt-2">
-            Developer , Mountaineer , Tinkerer
+            Developer
           </p>
         </div>
         {showArrows && (
